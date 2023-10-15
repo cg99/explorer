@@ -82,5 +82,5 @@ app.delete('/deleteCloudData', async (req, res) => {
 
 // Start the Express server
 app.listen(port, () => {
-    console.log(`Server is running at http://${localIP}:${port}`);
+    console.log(`Server is running at ${port}`);
 });
