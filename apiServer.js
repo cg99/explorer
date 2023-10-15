@@ -8,7 +8,7 @@ const app = express();
 // Enable CORS for all routes
 app.use(cors());
 
-const localIP = '192.168.1.110';
+// const localIP = '192.168.1.110';
 const port = 3001;
 
 // Connect to MongoDB Atlas
@@ -81,6 +81,6 @@ app.delete('/deleteCloudData', async (req, res) => {
 });
 
 // Start the Express server
-app.listen(port, localIP, () => {
+app.listen(port, () => {
     console.log(`Server is running at http://${localIP}:${port}`);
 });
