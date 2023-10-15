@@ -9,7 +9,7 @@ const app = express();
 app.use(cors());
 
 // const localIP = '192.168.1.110';
-const port = 3001;
+// const port = 3001;
 
 // Connect to MongoDB Atlas
 const uri = "mongodb+srv://umessgm:GNvC0ddomNceDF1E@cordova.itqab0i.mongodb.net/?retryWrites=true&w=majority&appName=AtlasApp";
@@ -81,6 +81,4 @@ app.delete('/deleteCloudData', async (req, res) => {
 });
 
 // Start the Express server
-app.listen(port, () => {
-    console.log(`Server is running at ${port}`);
-});
+app.listen();
