@@ -6,7 +6,9 @@ const cors = require('cors');
 const app = express();
 
 // Enable CORS for all routes
-app.use(cors());
+app.use(cors({
+    origin: 'http://localhost:8000'
+}));
 
 // const localIP = '192.168.1.110';
 // const port = 3001;
