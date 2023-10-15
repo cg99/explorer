@@ -22,7 +22,7 @@ app.use(bodyParser.urlencoded({ limit: '50mb', extended: true }));
 
 app.get('/', (req, res) => {
     // res.status(200).send({ message: 'Server is running!' });
-    res.send('<p>Server is running!</p>');
+    res.send('<p>Local Explorer Server is running!</p>');
 });
 
 // API endpoint to upload data to MongoDB Atlas
